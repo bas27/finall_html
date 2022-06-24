@@ -1,4 +1,26 @@
-.title {
-    color: blue;
-    border: 1px solid;
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    background-image: url("../images/banner-bg.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-color: grey;
+    
+}
+
+.menu-list {
+    display: flex;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.menu-list-item {
+    text-decoration: none;
+    list-style-type: none;
+
 }
