@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+body {
+    margin: 0;
+
+}
+
+.logo {
+    width: 180px;
+}
+
 .container {
     display: flex;
     margin-left: auto;
@@ -5,22 +28,87 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    
-    background-image: url("../images/banner-bg.jpg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-color: grey;
-    
+    max-width: 1170px;
+
+    padding-top: 29px;
 }
 
 .menu-list {
+
     display: flex;
-    padding: 10px;
-    background-color: blueviolet;
+    list-style-type: none;
+    color: white;
+
+    text-align: center;
+
 }
 
-.menu-list-item {
-    text-decoration: none;
-    list-style-type: none;
+.menu-list-item:nth-child(n+2) {
+    margin-left: 35px
+  }
 
+.menu-link {
+
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+
+    font-family: OpenSans;
+    font-size: 13px;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-image: url(../images/Rectangle\ 1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #000000;
+    color: white;
+    height: 450px;
+
+    text-align: center;
+
+    z-index: 0;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    
+    z-index: -1
+  }
+
+  .title {
+    text-transform: uppercase;
+    
+    font-family: OpenSans-Bold;
+    font-size: 45px;
+    text-align: center;
+    /* line-height: 75px; */
+
+    margin: 0;
+
+  }
+
+.intro {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 690px;
+    margin-top: 125px;
+    margin-bottom: 145px;
+    
 }
