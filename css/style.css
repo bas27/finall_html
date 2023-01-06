@@ -14,26 +14,27 @@
     font-weight: bold;
 }
 * {
+    font-family: OpenSans, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 h1, h2, h3 {
-    font-family: OpenSans;
-    font-weight: 700;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 /*container==========================*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 /*header=================*/
 .header {
-    padding: 35px 0 140px;
+    padding: 27px 0 127px;
     width: 100%;
-    background-image: url("../images/banner-bg.jpg");
+    background-image: url("../images/Rectangle\ 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,7 +60,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 35px;
 }
 .noemi-logo {
     width: 180px;
@@ -67,7 +67,6 @@ h1, h2, h3 {
 
 /*Nav=====================*/
 .menu {
-    font-family: OpenSans, sans-serif;
     font-style: normal;
     font-size: 13px;
     text-transform: uppercase;
@@ -101,19 +100,15 @@ h1, h2, h3 {
 /*Title===========================*/
 
 .title {
-    justify-content: center;
-    margin-top: 85px;
-    max-width: 678px;
+    /* justify-content: center; */
+    margin-top: 102px;
+    max-width: 687px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .header-title {
-    margin: 0;
-    font-family: OpenSans, sans-serif;
-    font-weight: bold;
     font-size: 45px;
-    
     line-height: 1.6;
     text-align: center;
     color: #ffffff;
@@ -128,7 +123,6 @@ h1, h2, h3 {
     font-size: 20px;
     font-weight: 700;
     color: #0f0d0e;
-    font-family: OpenSans, sans-serif;
     text-transform: uppercase;
     text-align: center;
     padding-top: 60px;
@@ -140,12 +134,12 @@ h1, h2, h3 {
     content:"";
     display: block;
     height: 3px;
-    width: 60px;
+    width: 66px;
     text-align: center;
-    background-color: #e1d9bd;
+    background-color: #b59f5b;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .trend {
@@ -157,7 +151,6 @@ h1, h2, h3 {
     margin-left: 3px;
 }
 .trends-image {
-    box-sizing: border-box;
     position: relative;
     height: 100%;
     z-index: 1;
@@ -171,7 +164,7 @@ h1, h2, h3 {
 .trends-image::after {
     content: "";
     width: 100%;
-    height: 100%;
+    height: 97%;
     display: block;
     position: absolute;
     top: 0;
@@ -180,17 +173,15 @@ h1, h2, h3 {
     z-index: 2;
 }
 .trends-info {
-    font-family: OpenSans, sans-serif;
     font-size: 20px;
-    box-sizing: border-box; 
     padding: 1.5em;
-    border: 2px solid #c7b585;
+    border: 3px solid #b59f5b;
     position: absolute;
     z-index: 3;
     bottom: 15px;
-    /*margin-right: 20px;*/
+    margin-right: 20px;
     margin-left: 0.5em;
-    width: 95%;
+    width: 90%;
 }
 .trends-header {
     color: #fff;
@@ -198,14 +189,22 @@ h1, h2, h3 {
 .trends-title {
     text-transform: uppercase;
     font-size: 20px;
-    color: #fff;
-    font-weight: 530;
     line-height: 1.2;
 }
+
+.first-trends-title {
+    max-width: 13em;
+}
+
 .trend-header-link {
     text-decoration: none;
     color: inherit;
 }
+
+.trend-header-link:hover {
+    color: #b59f5b;
+}
+
 /*trends-list=================================*/
 
 .trends-list {
@@ -219,7 +218,7 @@ h1, h2, h3 {
 }
 
 .trends-list-item:nth-child(n+2) {
-    margin-left: 15px;
+    margin-left: 18px;
 }
 
 .wrapper {
@@ -228,17 +227,14 @@ h1, h2, h3 {
 }
 /*posts=======================================================*/
 .posts {
-    
-    padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: OpenSans, sans-serif;
     font-weight: 400;
 }
 /*main=====================================*/
 .main {
-    width: 775px;
+    width: 785px;
 }
 
 .post {
@@ -255,11 +251,10 @@ h1, h2, h3 {
 }
 .post-img {
     background-color: #000000;
-    width: 370px;
+    width: 380px;
 }
 
 .post-info {
-    font-family: OpenSans, sans-serif;
     font-size: 15px;
     box-sizing: border-box;
     display: flex;
@@ -272,7 +267,7 @@ h1, h2, h3 {
 .tags-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .tags-list-item {
@@ -295,7 +290,7 @@ h1, h2, h3 {
 }
 
 .tags-list-item:nth-child(n+2) {
-    margin-left: 15px;
+    margin-left: 18px;
 }
 
 /*post-title===========================*/
@@ -303,18 +298,20 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.post-header-link:hover {
+    color: #b59f5b;
+}
+
 .post-title {
-    text-transform: uppercase;
     font-size: 20px;
     color: #0f0d0e;
-    font-weight: 700;
     line-height: 1.2;
 }
 
 .post-date {
     font-size: 12px;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 45px;
 }
 
 .date {
@@ -324,31 +321,27 @@ h1, h2, h3 {
 .author {
     color: #000000;
     font-weight: 700;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .post-content {
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.6;
     width: 367px;
     color: #0f0d0e;
 }
 /*new-posts==================================*/
 h3 {
     font-size: 14px;
-    font-weight: 700;
-    color: #0f0d0e;
-    font-family: OpenSans, sans-serif;
-    text-transform: uppercase;
 }
 
 .side-header-title::after {
     content:"";
     display: block;
     height: 3px;
-    width: 60px;
+    width: 65px;
     text-align: center;
-    background-color: #e1d9bd;
-    margin-top: 15px;
+    background-color: #b59f5b;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -357,21 +350,22 @@ h3 {
 }
 .side-header {
     text-align: center;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
 }
 .new-post {
     display: flex;
 }
 .new-post:nth-child(n+2){
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .new-post-img {
     width: 70px;
-    background-color: #000000
+    background-color: #000000;
+    margin-top: 1px;
 }
 .new-post-image {
     box-sizing: border-box;
-    margin-right: 20px;
+    margin-right: 17px;
 }
 
 .post-header-link {
@@ -379,14 +373,13 @@ h3 {
     text-decoration: none;
 }
 .new-post-inner {
-    box-sizing: border-box;
     line-height: 1.2;
 }
 
 /*searh-field===============================*/
 
 .search-field {
-    margin-top: 60px;
+    margin-top: 55px;
     margin-bottom: 60px;
 }
 
@@ -408,12 +401,19 @@ form {
     height: 50px;
     box-sizing: border-box;
     border: none;
-    padding: 10px;
+    padding: 15px;
     margin: 0;
     outline: none;
     font-size: 13px;
     color: #797a7a;
     background-color: #f4f7f6;
+}
+
+.field:focus {
+    outline-color: #b59f5b;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px;
 }
 
 .search-button {
@@ -441,6 +441,13 @@ form {
     font-size: 13px;
     color: #797a7a;
     background-color: #f4f7f6;
+}
+
+.email-field:focus {
+    outline-color: #b59f5b;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -2px;
 }
 
 .subscribe-button {
@@ -485,8 +492,8 @@ form {
 }
 
 .tag-chart-link:hover{
-    outline: 2px solid #e4decd;
-    outline-offset: -5px;
+    outline: 3px solid #b59f5b;
+    outline-offset: -3px;
 }
 
 .topics-list {
@@ -503,6 +510,10 @@ form {
     font-weight: 700;
     color: #0f0d0e;
     text-align: center;
+}
+
+.topic-link:hover {
+    color: #b59f5b;
 }
 
 .number {
@@ -539,8 +550,8 @@ form {
     margin-left: 0;
 }
 .product-image {
-    width: 85%;
-    margin-bottom: -30px;
+    width: 88%;
+    margin-bottom: -39px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -550,7 +561,6 @@ form {
     /*height: 200px;*/
 }
 .product-description {
-    font-family: OpenSans;
     font-weight: normal;
     font-size: 15px;
 }
@@ -569,13 +579,10 @@ form {
 }
 .shop-header-title {
     font-size: 20px;
-    font-weight: 700;
     color: #0f0d0e;
-    font-family: OpenSans, sans-serif;
-    text-transform: uppercase;
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 25px;
+    padding-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -583,16 +590,15 @@ form {
     content:"";
     display: block;
     height: 3px;
-    width: 60px;
+    width: 66px;
     text-align: center;
     background-color: #e1d9bd;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 7px;
 }
 .product-title {
     color: #0f0d0e;
-    font-family: OpenSans, sans-serif;
     text-transform: uppercase;
     text-align: left;
     font-size: 20px;
@@ -602,10 +608,9 @@ form {
     color: inherit;
 }
 .product-body {
-    font-family: OpenSans, sans-serif;
     border: 3px solid #d3c59d;
     padding-top: 50px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
     position: sticky;
     flex-grow: 1;
@@ -614,11 +619,11 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 28px;
-    margin-bottom: 25px;
+    margin-top: 21px;
+    margin-bottom: 29px;
 }
 .product-content {
-    line-height: 1.4;
+    line-height: 1.45;
 }
 .product-button {
     width: 140px;
@@ -666,11 +671,11 @@ form {
 .socials {
     list-style-type: none;
     display: flex;
-    width: 215px;
+    width: 240px;
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 30px;
 }
 
@@ -714,8 +719,7 @@ form {
     font-size: 12px;
     line-height: 3.3;
     font-weight: 700;
-    font-family: OpenSans, sans-serif;
-}
+    }
 .copyright-link {
     text-decoration: none;
     color: #999999;
@@ -754,7 +758,6 @@ form {
     /*font-size: 20px;
     font-weight: 700;
     color: #0f0d0e;
-    font-family: OpenSans, sans-serif;
     text-transform: uppercase;*/
     text-align: center;
     padding-bottom: 25px;
@@ -840,7 +843,6 @@ form {
     height: 1px;
 }
 .field-textarea {
-    font-family: OpenSans;
     font-size: 14px;
     color: #7f8382;
     background-color: #f3f7f6;
@@ -848,6 +850,7 @@ form {
     width: 100%;
     height: 130px;
     border: none;
+    resize: none;
 }
 .send-button {
     box-sizing: border-box;
