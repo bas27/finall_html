@@ -1041,6 +1041,27 @@ form {
     }
 }
 
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    .trend {
+        flex-basis: calc(25% - 3px);
+    }
+
+    .trend:nth-of-type(n+2){
+        margin-left: 3px;
+}
+    .trends-title {
+        font-size: 0.7em;
+    }
+
+    .trends-info {
+        font-size: 15px;
+        padding: 0.5em;
+    }
+    .tags-link {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 640px) {
     html {
         font-size: 6px;
@@ -1072,11 +1093,7 @@ form {
     #trend-inner {
         margin-left: 0;
     }
-    /* .trend:nth-of-type(n+2) {
-        margin-top: 3px;
-        margin-left: 0px;
-    } */
-
+  
     .main {
         max-width: 100%;
         display: block;
@@ -1148,7 +1165,6 @@ form {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
- 
     .trends {
         display: flex;
         flex-wrap: wrap;
