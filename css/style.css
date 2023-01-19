@@ -1040,6 +1040,7 @@ form {
         padding: 0;
     }
 }
+
 @media (max-width: 640px) {
     html {
         font-size: 6px;
@@ -1065,15 +1066,17 @@ form {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .trends {
-        display: block;
-    }
+    /* .trends {
+        flex-direction: column;
+    } */
     #trend-inner {
         margin-left: 0;
     }
-    .trend:nth-of-type(n+2) {
+    /* .trend:nth-of-type(n+2) {
         margin-top: 3px;
-    }
+        margin-left: 0px;
+    } */
+
     .main {
         max-width: 100%;
         display: block;
@@ -1128,5 +1131,43 @@ form {
     }
     .popup_hidden {
         padding: 50px 0;
+    }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+    .trends {
+        flex-direction: column;
+    }
+    #trend-inner {
+        margin-left: 0;
+    }
+    .trend:nth-of-type(n+2) {
+        margin-top: 3px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+ 
+    .trends {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .trend {
+        flex-basis: calc(50% - 2px);
+        margin-top: 3px; 
+    }
+    .trend:nth-of-type(odd){
+        margin-left: 0;
+    }
+
+    .trends-title {
+        font-size: 14px;
+    }
+
+    .trends-info {
+        padding: 0.5em;
     }
 }
